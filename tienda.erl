@@ -6,6 +6,12 @@
 % Germán Salas
 % Alejandro Charles
 
+% Para inicializar el programa, es necesario primero llamar la funcion "tienda:abre_tienda()", que comienza el proceso de la tienda.
+% Para poder probar el resto de los procesos, tambien es necesario registrar un socio con "socio:suscribir_socio()", y registrar productos a la 
+% tienda con "tienda:registra_producto(producto, cantidad)". El resto de las funciones sirven para modificar la informacion ya sea de los socios, 
+% sus pedidos, o los productos, que incluyen su eliminacion, registro, modificacion, o consulta. Tambien es importante cargar el modulo de este archivo, 
+% "tienda" en la terminal, junto con el de "socio" del otro archivo, antes de utilizar cualquiera de los procesos. 
+
 -module(tienda).
 -export([abre_tienda/0, cierra_tienda/0, registra_producto/2, elimina_producto/1, modifica_producto/2, listar_existencias/0, lista_socios/0, productos_vendidos/0]).
 
