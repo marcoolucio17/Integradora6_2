@@ -6,6 +6,11 @@
 % Germán Salas
 % Alejandro Charles
 
+% Para comenzar a accesar procesos de la tienda, es necesario primero registrar un socio con "socio:suscribir_socio(Socio)". Tras hacer esto,
+% será posible utilizar el resto de las funciones y procesos de tienda, para realizar pedidos o consultar existencias. Instrucciones mas detalladas 
+% acerca del uso de tienda se encuentran en el archivo correspondiente. Ademas, es importante cargar los modulos de "tienda" y "socio" en la terminal
+% antes de llamar cualquier funcion. 
+
 -module(socio).
 -export([suscribir_socio/1, elimina_socio/1, crea_pedido/2, lista_existencias/0]).
 
